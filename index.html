@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="mx-auto bg-green-50 font-['Roboto']">
+
+    <header>
+        <div class="flex flex-col md:flex-row justify-between items-center p-5 bg-white gap-5">
+
+            <div class="flex items-center">
+                <img src="assets/logo.png" class="w-12 h-12" alt="logo" />
+                <h1 class="text-xl md:text-2xl font-bold text-[#006747] ml-3">
+                    Emergency<br />
+                    Service
+                </h1>
+            </div>
+
+
+            <div class="flex flex-wrap md:flex-nowrap gap-5">
+                <div class="flex items-center px-6 py-3 rounded-full bg-green-100">
+                    <h1 class="mr-5 text-xl font-bold"><span id="love_cnt">0</span></h1>
+                    <img src="assets/heart.png" class="w-6 h-6" alt="" />
+                </div>
+                <div class="flex items-center px-6 py-3 rounded-full bg-green-100">
+                    <h1 class="mr-5 text-xl font-bold"><span>100</span></h1>
+                    <img src="assets/coin.png" class="w-6 h-6" alt="" />
+                </div>
+                <div class="flex items-center px-6 py-3 rounded-full bg-green-500">
+                    <h1 class="mr-5 text-xl font-bold text-white">
+                        <span class="mr-3">2</span>Copy
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div
+            class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex justify-center items-center p-6 md:p-10">
+            <div class="text-center max-w-3xl">
+                <img src="assets/logo-dark.png" class="w-20 h-20 md:w-24 md:h-24 mx-auto" alt="logo" />
+                <h1 class="text-2xl md:text-3xl text-white font-bold mt-5">
+                    Emergency Service Directory
+                </h1>
+                <p class=" md:text-lg text-white font-semibold mt-5">
+                    Government Emergency Services at Your Fingertip – A Project by
+                    Government of the People’s Republic of Bangladesh
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="p-5 mt-10 flex flex-col lg:flex-row gap-8 w-full " id="">
+
+        <div class="flex flex-wrap justify-center gap-5 w-full lg:w-4/5">
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <div class="cursor-pointer " id="love_icon">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+
+
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                        National Emergency Number
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        All
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="flex flex-col md:flex-row lg:flex-row justify-between gap-5 w-full lg:w-1/5">
+            <div>
+                <h1 class="text-xl md:text-2xl font-['Roboto'] text-black font-medium">
+                    <i class="fa-regular fa-clock mr-3 text-gray-500"></i>Call History
+                </h1>
+            </div>
+            <div>
+                <button class="btn bg-green-600 px-6 py-3 rounded-full text-white w-full md:w-auto">
+                    Clear
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
