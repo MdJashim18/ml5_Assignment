@@ -7,33 +7,10 @@ function LoveIconClick(id) {
     document.getElementById(id).innerText = love_cntIncreament;
 }
 
-document.getElementById("love_icon").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon1").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon2").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon3").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon4").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon5").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon6").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon7").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
-document.getElementById("love_icon8").addEventListener('click', function () {
-    LoveIconClick("love_cnt");
-});
+
+
+
+
 
 const serviceArray = [];
 function coinDecrease(id, id1, id2) {
@@ -82,6 +59,54 @@ function coinDecrease(id, id1, id2) {
 }
 
 
+
+
+function copyNumberIncreament(id, id1) {
+    const copyCnt = document.getElementById(id).innerText;
+    const copyCntInt = parseInt(copyCnt);
+    const copyCntIncrease = copyCntInt + 1;
+
+    document.getElementById("copy_link").innerText = copyCntIncrease;
+    const serviceNumber = document.getElementById(id1).innerText;
+    alert("Number has been copied" + " - " + serviceNumber);
+    navigator.clipboard.writeText(serviceNumber).then()
+}
+
+
+
+
+
+document.getElementById("love_icon").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon1").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon2").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon3").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon4").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon5").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon6").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon7").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+document.getElementById("love_icon8").addEventListener('click', function () {
+    LoveIconClick("love_cnt");
+});
+
+
+
+
 document.getElementById("call_button").addEventListener('click', function () {
     coinDecrease("coin", "service_name", "service_Number");
 
@@ -123,16 +148,7 @@ document.getElementById("clear_history").addEventListener('click', function () {
 });
 
 
-function copyNumberIncreament(id, id1) {
-    const copyCnt = document.getElementById(id).innerText;
-    const copyCntInt = parseInt(copyCnt);
-    const copyCntIncrease = copyCntInt + 1;
 
-    document.getElementById("copy_link").innerText = copyCntIncrease;
-    const serviceNumber = document.getElementById(id1).innerText;
-    alert("Number has been copied" + " - " + serviceNumber);
-    navigator.clipboard.writeText(serviceNumber).then()
-}
 document.getElementById("copy_button").addEventListener('click', function () {
     copyNumberIncreament("copy_link", "service_Number");
 
