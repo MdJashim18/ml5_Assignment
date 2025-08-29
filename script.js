@@ -116,9 +116,55 @@ document.getElementById("call_button8").addEventListener('click', function () {
 
 
 document.getElementById("clear_history").addEventListener('click', function () {
-    console.log("Mohammad Jashim Uddin");
     document.getElementById("show_services").innerHTML = "";
     while (serviceArray.length > 0) {
         serviceArray.pop();
     }
-})
+});
+
+
+function copyNumberIncreament(id,id1){
+    const copyCnt = document.getElementById(id).innerText;
+    const copyCntInt = parseInt(copyCnt);
+    const copyCntIncrease = copyCntInt+1;
+
+    document.getElementById("copy_link").innerText = copyCntIncrease;
+    const serviceNumber = document.getElementById(id1).innerText;
+    alert("Number has been copied" + " - " + serviceNumber);
+}
+document.getElementById("copy_button").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number");
+    
+});
+document.getElementById("copy_button1").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number1");
+    
+});
+document.getElementById("copy_button2").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number2");
+    
+});
+document.getElementById("copy_button3").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number3");
+    
+});
+document.getElementById("copy_button4").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number4");
+    
+});
+document.getElementById("copy_button5").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number5");
+    
+});
+document.getElementById("copy_button6").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number6");
+    
+});
+document.getElementById("copy_button7").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number7");
+    
+});
+document.getElementById("copy_button8").addEventListener('click',function(){
+    copyNumberIncreament("copy_link","service_Number8");
+    
+});
