@@ -131,6 +131,7 @@ function copyNumberIncreament(id, id1) {
     document.getElementById("copy_link").innerText = copyCntIncrease;
     const serviceNumber = document.getElementById(id1).innerText;
     alert("Number has been copied" + " - " + serviceNumber);
+    navigator.clipboard.writeText(serviceNumber).then()
 }
 document.getElementById("copy_button").addEventListener('click', function () {
     copyNumberIncreament("copy_link", "service_Number");
