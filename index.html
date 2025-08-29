@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emergency Service</title>
+    <title>Emergency Hotline</title>
 
     <!-- Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -43,7 +43,7 @@
                     <img src="assets/heart.png" class="w-6 h-6" alt="" />
                 </div>
                 <div class="flex items-center px-6 py-3 rounded-full bg-green-100">
-                    <h1 class="mr-5 text-xl font-bold"><span>100</span></h1>
+                    <h1 class="mr-5 text-xl font-bold"><span id="coin">100</span></h1>
                     <img src="assets/coin.png" class="w-6 h-6" alt="" />
                 </div>
                 <div class="flex items-center px-6 py-3 rounded-full bg-green-500">
@@ -73,9 +73,9 @@
 
     <main class="p-5 mt-10 flex flex-col lg:flex-row gap-8 w-full " id="">
 
-        <div class="flex flex-wrap justify-center gap-5 w-full lg:w-4/5">
+        <div class="flex flex-wrap justify-center gap-5 w-full lg:w-3/5">
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
@@ -85,11 +85,11 @@
                             <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
                         </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name">
                         National Emergency Number
                     </h1>
                     <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number">999</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
                         All
                     </button>
@@ -97,225 +97,246 @@
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
-                            <i class="fa-solid fa-phone mr-2"></i>Call
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
-                <div>
-                    <div class="flex justify-between items-center">
-                        <div class="bg-red-100 p-3 rounded-lg">
-                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
-                        </div>
-
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
-
-
-                    </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
-                    </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
-                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
-                    </button>
-                    <div class="gap-4 flex justify-center items-center">
-                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
-                            <i class="fa-regular fa-copy mr-2"></i>Copy
-                        </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']"
+                            id="call_button" >
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px] bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
-                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                            <img src="assets/police.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+
+                        <div class="cursor-pointer " id="love_icon1">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
+
+
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name1">
+                        Police Helpline Number
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Police</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number1">999</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        Police
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']" id="call_button1">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
-                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                            <img src="assets/fire-service.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                        <div class="cursor-pointer " id="love_icon2">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name2">
+                        Fire Service Number
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Fire Service</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number2">999</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        Fire
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']" id="call_button2">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
-                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                            <img src="assets/ambulance.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                        <div class="cursor-pointer " id="love_icon3">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name3">
+                        Ambulance Service
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Ambulance</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number3">1994-999999</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        Health
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']" id="call_button3">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
                             <img src="assets/emergency.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                        <div class="cursor-pointer " id="love_icon4">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name4">
+                        Women & Child Helpline
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Women & Child Helpline</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number4">109</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        Help
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']" id="call_button4">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
                             <img src="assets/emergency.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                        <div class="cursor-pointer " id="love_icon5">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name5">
+                        Anti-Corruption Helpline
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Anti-Corruption</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number5">106</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        Govt.
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']" id="call_button5">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
                             <img src="assets/emergency.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                        <div class="cursor-pointer " id="love_icon6">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name6">
+                        Electricity Helpline
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Electricity Outage</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number6">16216</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        Electricity
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']"
+                        id="call_button6">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] bg-white rounded-2xl p-5 shadow-md">
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
                 <div>
                     <div class="flex justify-between items-center">
                         <div class="bg-red-100 p-3 rounded-lg">
-                            <img src="assets/emergency.png" class="w-10 h-10" alt="" />
+                            <img src="assets/brac.png" class="w-10 h-10" alt="" />
                         </div>
-                        <i class="fa-regular fa-heart text-xl text-gray-500"></i>
+                        <div class="cursor-pointer " id="love_icon7">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']">
-                        National Emergency Number
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name7">
+                        Brac Helpline
                     </h1>
-                    <p class="font-['Roboto'] text-gray-500 mt-2">National Emergency</p>
-                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5">999</h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Brac</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number7">16445</h1>
                     <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
-                        All
+                        NGO
                     </button>
                     <div class="gap-4 flex justify-center items-center">
                         <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
                             <i class="fa-regular fa-copy mr-2"></i>Copy
                         </button>
-                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']">
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']"
+                        id="call_button7">
+                            <i class="fa-solid fa-phone mr-2"></i>Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[300px] md:w-[350px]  bg-white rounded-2xl p-5 shadow-md">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <img src="assets/Bangladesh-Railway.png" class="w-10 h-10" alt="" />
+                        </div>
+                        <div class="cursor-pointer " id="love_icon8">
+                            <i class="fa-regular fa-heart text-xl text-gray-500 "></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold mt-3 font-['Hind_Madurai']" id="service_name8">
+                        Bangladesh Railway Helpline 
+                    </h1>
+                    <p class="font-['Roboto'] text-gray-500 mt-2">Bangladesh Railway</p>
+                    <h1 class="font-['Roboto'] text-2xl md:text-3xl font-bold mt-5" id="service_Number8">163</h1>
+                    <button class="btn bg-gray-200 px-4 py-2 rounded-full mt-3 mb-3">
+                        Travel
+                    </button>
+                    <div class="gap-4 flex justify-center items-center">
+                        <button class="btn flex-1 bg-white px-6 py-3 rounded-xl text-gray-500">
+                            <i class="fa-regular fa-copy mr-2"></i>Copy
+                        </button>
+                        <button class="btn flex-1 bg-green-600 px-6 py-3 rounded-xl text-white font-['Roboto']"
+                        id="call_button8">
                             <i class="fa-solid fa-phone mr-2"></i>Call
                         </button>
                     </div>
@@ -326,16 +347,21 @@
         </div>
 
 
-        <div class="flex flex-col md:flex-row lg:flex-row justify-between gap-5 w-full lg:w-1/5">
-            <div>
-                <h1 class="text-xl md:text-2xl font-['Roboto'] text-black font-medium">
-                    <i class="fa-regular fa-clock mr-3 text-gray-500"></i>Call History
-                </h1>
+        <div class="bg-white p-5 w-2/5">
+            <div class="flex flex-col md:flex-row lg:flex-row justify-between gap-5 w-full lg:w-full">
+                <div>
+                    <h1 class="text-xl md:text-xl font-['Roboto'] text-gray-700 font-medium">
+                        <i class="fa-regular fa-clock mr-1 text-gray-500"></i>Call History
+                    </h1>
+                </div>
+                <div>
+                    <button class="btn bg-green-600 px-6 py-3 rounded-full text-white w-full md:w-auto" id="clear_history">
+                        Clear
+                    </button>
+                </div>
             </div>
-            <div>
-                <button class="btn bg-green-600 px-6 py-3 rounded-full text-white w-full md:w-auto">
-                    Clear
-                </button>
+            <div id="show_services">
+
             </div>
         </div>
     </main>
